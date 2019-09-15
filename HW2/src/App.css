@@ -1,0 +1,281 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+	padding: 10px 0 0;
+}
+
+.img-holder img {
+	max-width: 100%;
+}
+
+.banner img {
+	vertical-align: top;
+}
+
+.banner {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.text-container a {
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 300;
+	letter-spacing: 0.12em;
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+}
+
+.text-container {	
+	background-color: rgba(0, 159, 227, 0.68);
+	padding: 20px 48px;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+.nav-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	vertical-align: bottom;
+	margin-top: 5px;
+}
+
+.nav-list a {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 17px;
+	font-weight: 300;
+	letter-spacing: -0.025px;
+	color: #000;
+}
+
+.text-content {
+	display: flex;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 0.12em;
+	color: rgba(0, 0, 0, 0.87);
+	margin-bottom: 20px;
+}
+
+time {
+	font-size: 15px;
+	line-height: 16px;
+	font-weight: 300;
+	letter-spacing: 0.12em;
+	color: #fff;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 300;
+	letter-spacing: 0.12em;
+	color: rgba(255, 255, 255, 0.7);
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.left-block, .right-block {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 0;
+	color: rgba(0, 0, 0, 0.57);
+	margin: 0;
+	padding: 30px 48px;
+}
+
+.left-block > p {
+	margin-bottom: 40px;
+}
+
+.right-block {
+	color: rgba(255, 255, 255, 0.7);
+	background-color: #f39200;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+	
+}
+
+.left-block h3 {color: #000;}
+
+.left-block time  {color: rgba(0, 0, 0, 0.57);}
+
+.right-block h2 {color: #fff;}
+
+.button {	
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+	padding: 10px 20px;
+	background-color: none;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	position: absolute;	
+	align-self: center;
+}
+
+.button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.content {
+	margin-bottom: 30px;
+}
+
+
+
+.sub-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text-link {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 18px;
+	letter-spacing: 0.12em;
+	background-color: rgba(0, 159, 227, 0.5);
+	position: absolute;
+	padding: 10px 30px;
+	z-index: 1;
+	margin-top: -50px;
+}
+
+.sub-content img {
+	vertical-align: top;
+}
+
+.image-holder {
+	position: relative;
+}
+
+.text-link a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+@media (min-width: 320px) {
+	.banner img, 
+	.sub-content img{
+		max-width: 100%;
+	}
+	.sub-content, 
+	.text-content {
+		flex-direction: column;
+	}
+	.left-block, 
+	.right-block {
+		width: 100%;
+	}
+	.nav-list,
+	.header-container {
+		flex-direction: column;
+	}
+	.image-holder {
+		width: 100%;
+	}
+
+	.text-container {
+		padding: 0 20px;
+	}
+
+	.text-container a {
+		font-size: 12px
+	}
+	.button {	
+		bottom: 20px;	
+	}
+}
+
+@media (min-width: 600px) {
+	.banner img, 
+	.sub-content img {
+		max-width: 100%;
+	}
+	.sub-content {
+		flex-direction: row;
+	}
+	.text-content {
+		flex-direction: column;
+	}
+	.left-block, .right-block {
+		width: 100%;
+	}
+	.nav-list {
+		width: 60%;
+		flex-direction: row;
+	}
+	.header-container {
+		flex-direction: row;
+	}
+	.image-holder {
+		width: 50%;
+	}
+	.text-container a {
+		font-size: 25px
+	}
+	.button {	
+		bottom: 30px;	
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		max-width: 80%;
+	}
+	.banner img,
+	.sub-content img {
+		max-width: 100%;
+	}
+	.sub-content,
+	.text-content {
+		flex-direction: row;
+	}
+	.left-block, 
+	.right-block {
+		width: 50%;
+	}
+	.nav-list {
+		width: 60%;
+	}
+	.header-container {
+		flex-direction: row;
+	}
+	.image-holder {
+		width: 50%;
+	}
+	.button {	
+		bottom: 40px;	
+	}	
+}
